@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -11,6 +12,15 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col{
+    flex-direction: column;
+    align-items: center;
 }
 
 a:hover {
@@ -91,7 +101,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -284,7 +294,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 35px;
 }
 
 .navbar {
@@ -324,8 +334,8 @@ a:hover {
 
 .nav > li {
     float: left;
-    margin-top: 4px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -335,6 +345,9 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+}
+ul li a:hover {
+    color: #8E553B!important;
 }
 
 .navbar-toggle {
@@ -474,6 +487,12 @@ button {
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
+
+.col-sm-9{
+    margin: auto;
+    float: none;
+}
+
 
 .icon-md {
     font-size: 30px!important;
@@ -651,7 +670,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #0F0F0F!important;
 }
 
 .container {
@@ -676,9 +695,6 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -692,7 +708,6 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -704,30 +719,27 @@ p {
     margin: auto auto auto auto;
 }
 
-h2 {
-    font-size: 22px;
+.text-center h2 {
+    font-size: 24px;
     line-height: 1.4em;
 }
-
-h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
-}
-
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
-
-h1 {
-    color: #333333!important;
+.pg-contact{
+    font-size: 18px;
+}
+address{
+    color: #1C264A!important;
+}
+address a{
+    background-color: #FB9B71
 }
 
-h4 {
-    color: #333333!important;
+address a:hover{
+    background-color:#F1AC8F;
 }
 
 .icons {
@@ -737,6 +749,7 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    font-size: 16px;
 }
 
 .portfolio-thumb {
@@ -747,13 +760,25 @@ h4 {
     margin-bottom: 44px;
     margin-top: 50px;
 }
-
+h3{
+    font-size: 18px;
+    font-weight: 600!important;
+}
+h4{
+    font-size: 22px;
+}
+h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
+}
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #1c264ae8;
     padding: 40px 40px 40px 40px;
 }
 
@@ -769,23 +794,29 @@ h4 {
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
-
+.bgc-dark-slate-blue::before{
+    background-color: #1c264ab3;
+}
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #FB9B71;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
+}
+.tc-blue{
+    color: #2C3B6E!important;
+}
+.tc-orange{
+    color: #FB9B71!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #FB9B71;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #F1AC8F!important;
 }
 
 .ltc-white {
@@ -797,7 +828,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #FB9B71!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -810,19 +841,61 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
+}
+.fs-niteen{
+    font-size: 19px;
+}
+.fs-twone{
+    font-size: 21px;
+}
+h6{
+    position: relative;
+    font-size: 23px;
+}
+.social-ic{
+    color: #1C264A!important;
+    opacity: 0.8;
+}
+
+.social-ic:hover{
+    opacity: 1;
+}
+
+.dark-blue{
+    color: #1C264A!important;
+    padding: 20px;
+}
+.partners{
+    padding: 25px;
+    color: #1C264A!important;
+}
+
+.partners-lst{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 20px;
+}
+.partners-lst a{
+    color: #1C264A!important;
+}
+.partners-lst a:hover{
+    color:#0D1121!important;
+    border-bottom: solid 2px #1C264A;
+    padding-bottom: 5px;
 }
 
 @media (max-width: 1024px) {
@@ -927,12 +1000,24 @@ h4 {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         background: rgba(0, 0, 0, .05);
-        text-align: left;
+        text-align: center;
         padding-left: 15px;
         width: 100%;
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
+    }
+    h6{
+        margin: auto;
+        width: 90%;
+    }
+    .partners-lst{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partners-lst>li, .social>div{
+        padding-bottom: 20px;
     }
     .dropdown .dropdown a .caret {
         float: none;
@@ -980,7 +1065,7 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 40px 15px;
     }
     .bloc-sm,
     .bloc-md {
@@ -1011,7 +1096,7 @@ h4 {
         margin-top: 30px;
     }
     form {
-        padding: 5px;
+        padding: 15px;
     }
     .close-lightbox {
         display: inline-block;
@@ -1026,12 +1111,22 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .img-responsive{
+        width: 400px;
+        height: auto;
+        margin: auto;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .img-responsive{
+        width: 300px;
+        height: auto;
+        margin: auto;
     }
 }
 

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /includes/
+Disallow: /img/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+
+sitemap: https://alionauzun.github.io/OpenclassroomsProjet4/sitemap.txt
