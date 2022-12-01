@@ -760,6 +760,9 @@ address a:hover{
     margin-bottom: 44px;
     margin-top: 50px;
 }
+.portfolio-item{
+    margin-bottom: 50px;
+}
 h3{
     font-size: 18px;
     font-weight: 600!important;
@@ -792,7 +795,7 @@ h5 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    background-color: #1C264A;
 }
 .bgc-dark-slate-blue::before{
     background-color: #1c264ab3;
@@ -805,7 +808,7 @@ h5 {
     color: #FFFFFF!important;
 }
 .tc-blue{
-    color: #2C3B6E!important;
+    color:#1C264A!important;
 }
 .tc-orange{
     color: #FB9B71!important;
@@ -836,8 +839,8 @@ h5 {
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color:#1C264A!important;
+    border-color: #1C264A!important;
 }
 
 .bg-dots-bg {
