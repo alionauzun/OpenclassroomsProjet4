@@ -6,7 +6,7 @@
 	<!-- meta keywords -souprimé, balise obsolète-->	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<!--rédaction description-->
-	<meta name="description" content="Vous avez besoin d'un design du site web ? Notre équipe créative est prêts à relever vous défis avec dynamise et précision. Nous aidons les entreprises de la région Lyonnaise à être visible sur internet">
+	<meta name="description" content="Vous avez besoin d'un design du site web ? Notre équipe créative est prêts à relever vos défis avec dynamise et précision. Nous aidons les entreprises de la région Lyonnaise à être visible sur internet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<!--modification type favicon-->
 	<link rel="shortcut icon" type="image/webp" href="favicon.webp">
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
-	<!--rédaction titre avec mot-clé -->
+	<!--rédaction titre avec des mots-clés -->
 	<title>La Panthère, entreprise Webdesign a Lyon. Parlez-nous de votre projet</title>
 
 	<!--Scripts deplacés a la fin de page-->  
@@ -109,8 +109,8 @@
 			<div class="container bloc-md">
 				<div class="row">
 					<div class="col-sm-9 text-center">
+						<!--<img remplacé par h2-->
 						<h2>L'agence La Panthère est une agence de web design qui aide les enrterprises à devenir attractives et visibles sur internet</h2>
-						<!--<img alt="agence web, agence web lyon, web design lyon, stratégie web" src="img/title.png" />-->
 					</div>
 				</div>
 				<div class="row voffset-lg med-width-whitespace">
@@ -131,7 +131,7 @@
 							<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 						</div>
 						<h3 class="mg-md text-center">
-							&nbsp;Stratégie
+							Stratégie
 						</h3>
 						<p class="text-center ">
 							Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre
@@ -152,13 +152,8 @@
 					</div>
 				</div>
 				<div class="row flex voffset-lg voffset">
-					<!--
-					<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-						
-						<img alt="agence web, agence web paris, web design paris, stratégie web"
-							src="img/citation.png" />
-					-->
 					<div class="col-sm-6 text-center fs-twone">
+						<!--img citation soupprimé et raplacé par texte-->
 						<p>
 							<i><b>"L'agence" La Panthere est une exellente agence web! Les web designers ont réussi à capturer l'essence de notre entrerprise et à doubler nos ventes en ligne à Lyon</b></i><br> Maxim Guibard, PDG de À vous fourchettes
 						</p>
@@ -166,7 +161,6 @@
 					</div>
 				</div>
 		</section>
-
 		<!-- bloc-2-services END -->
 
 		<!-- bloc-3-what-i-do -->
@@ -185,9 +179,13 @@
 							aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous
 							ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à
 							nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés,
-							qui seront facilement trouvable sur les moteurs de recherche.						
+							qui seront facilement trouvable sur les moteurs de recherche.					
 						</p>
-						<a class="ltc-white bold-link flex" href="page2.html">Contactez notre équipe</a>
+							<!--balise br soupprimé-->	
+							<div class="text-center">
+								<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine"
+									id="cta-hero">Contact</a>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -284,7 +282,7 @@
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center dark-blue">
+						<p class="text-center tc-blue bloc-sm ">
 							Agence La Panthère - Agence web basée à Lyon.<br>
 						</p>
 						<div class="row row-no-gutters social">
@@ -329,11 +327,12 @@
 
 	</div>
 	<!--Scripts - Deplacés d'en tete de page (head) a la fin de body-->
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
+	<!--ajout d'attribut async et defer, qui les scripts peuvent être exécutés dès qu’ils sont disponibles-->
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" async></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+	<script src="./js/gmaps.js" async></script>
 <!-- Principal conteneur END -->
 </body>
 </html>

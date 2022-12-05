@@ -4,11 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<!--rédaction description-->
-	<meta name="description" content="Vous avez besoin d'un design du site web ? Notre équipe créative est prêts à relever vous défis avec dynamise et précision. Nous aidons les entreprises de la région Lyonnaise à être visible sur internet">
+	<meta name="description" content="Parlez-nous de votre projet en complétant le formulaire et nous vous contacterons dans les plus brefs délais. Le succes de votre entreprise sur internet ça sera desarme notre preocupation">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/webp" href="favicon.webp">
 
-<!--index and crawling for google-->
 <!--index and crawling for google-->
 <meta name="robots" content="index, follow" />
 <meta name="googlebot" content="index,follow" />
@@ -18,10 +17,9 @@
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
-
-	<title>Contact Parlez-nous de votre projet en complétant le formulaire
+	<!--rédaction titre avec des mots-clés -->
+	<title>Formulaire de contact avec l'entreprise Webdesign La Panthère a Lyon. Parlez-nous de votre projet en complétant le formulaire.
 	</title>
-
 
 	<!-- Analytics -->
 	<!-- Google tag (gtag.js) -->
@@ -55,6 +53,7 @@
 			<div class="container bloc-sm">
 				<nav class="navbar row">
 					<div class="navbar-header">
+							<!--modif alt-->
 						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg"
 								alt="La Panthere web design logo" height="40" /></a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
@@ -103,8 +102,10 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<!--update formulaire for action -->
+						<form method="post" action="includes/form_1.php" id="form_1" novalidate>
+							<!--id="form_1" novalidate success-msg="Your message has been sent."
+							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"-->
 							<div class="form-group">
 								<label for="name">
 									Nom
@@ -122,8 +123,13 @@
 							<div class="form-group">
 								<label for="input_504">
 									Comment nous avez-vous connu ?
+									<select name="info" id="info">
+										<option value="connaissance">Part une connaissance.</option>
+										<option value="web" selected>En navigant sur Internet.</option>
+										<option value="réseaux sociaux">En surfant sur les réseaux sociaux.</option>
+									</select>
 								</label>
-								<input class="form-control" type="email" required id="input_504" />
+								<!--<input class="form-control" type="email" required id="input_504" />-->
 							</div>
 							<div class="form-group">
 								<label for="message">
@@ -160,7 +166,7 @@
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center dark-blue flex">
+						<p class="text-center tc-blue bloc-sm flex">
 							Agence La Panthère - Agence web basée à Lyon.<br>
 						</p>
 						<div class="row row-no-gutters social">
@@ -195,11 +201,12 @@
 	</div>
 	<!-- Principal conteneur END -->
 
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<!--modif name files .js-->
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" async></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
 </body>
 
 </html>
