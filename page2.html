@@ -1,15 +1,17 @@
 <!doctype html>
 <!--langue fr-->
 <html lang="fr-fr">
+
 <head>
 	<meta charset="utf-8">
 	<!--rédaction description-->
-	<meta name="description" content="Parlez-nous de votre projet en complétant le formulaire et nous vous contacterons dans les plus brefs délais. Le succes de votre entreprise sur internet ça sera desarme notre preocupation">
+	<meta name="description"
+		content="Parlez-nous de votre projet en complétant le formulaire et nous vous contacterons dans les plus brefs délais. Le succes de votre entreprise sur internet ça sera desarme notre preocupation">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/webp" href="favicon.webp">
 
-<!--index and crawling for google-->
-<meta name="robots" content="index, follow" />
+	<!--index and crawling for google-->
+	<meta name="robots" content="index, follow" />
 
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -17,7 +19,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
 	<!--rédaction titre avec des mots-clés -->
-	<title>Formulaire de contact avec l'entreprise Webdesign La Panthère a Lyon. Parlez-nous de votre projet en complétant le formulaire.
+	<title>Formulaire de contact avec l'entreprise Webdesign La Panthère a Lyon. Parlez-nous de votre projet en
+		complétant le formulaire.
 	</title>
 
 	<!-- Analytics -->
@@ -52,7 +55,7 @@
 			<div class="container bloc-sm">
 				<nav class="navbar row">
 					<div class="navbar-header">
-							<!--modif alt-->
+						<!--modif alt-->
 						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg"
 								alt="La Panthere web design logo" height="40px" /></a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
@@ -79,7 +82,8 @@
 		<!-- bloc-0 END -->
 
 		<!-- bloc-6 -->
-		<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+		<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
+			id="bloc-6">
 			<div class="container-contact bloc-lg">
 				<div class="row">
 					<div class="col-sm-12 flex col fs-niteen">
@@ -100,62 +104,82 @@
 		<div class="bloc bgc-white l-bloc" id="bloc-7">
 			<div class="container bloc-lg">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-12">
 						<!--update formulaire for action -->
 						<form method="post" action="includes/form_1.php" id="form_1" novalidate>
-							<!--id="form_1" novalidate success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"-->
-							<div class="form-group">
-								<label for="name">
-									Nom
-								</label>
-								<input id="name" class="form-control" required />
+							<div class="col-sm-6">
+								<fieldset>
+									<legend>Informmations personnelles</legend>
+									<!--id="form_1" novalidate success-msg="Your message has been sent."
+                                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"-->
+									<div class="form-group">
+										<label for="name">
+											Nom
+										</label>
+										<input type="text" name="name" id="name" class="form-control" required />
+									</div>
+
+									<div class="form-group">
+										<label for="email">
+											Adresse email
+										</label>
+										<input id="email" type="tete" name="email" class="form-control" required />
+									</div>
+								</fieldset>
+							</div>
+							<!--<input class="form-control" type="email" required id="input_504" />-->
+							<div class="col-sm-6">
+								<fieldset>
+									<legend>Vos options</legend>
+									<div class="form-group">
+										<label for="known">Comment nous avez-vous connu ?</label>
+										<input type="text" name="known" id="known" list="known-hint" />
+										<datalist id="known-hint">
+											<option value="Part une connaissance"></option>
+											<option value="En navigant sur Internet" selected></option>
+											<option value="En surfant sur les réseaux sociaux"></option>
+										</datalist>
+									</div>
+								</fieldset>
 							</div>
 
-							<div class="form-group">
-								<label for="email">
-									Adresse email
-								</label>
-								<input id="email" class="form-control" type="email" required />
-							</div>
-							
-							<div class="form-group">
-								<label for="known">
-									Comment nous avez-vous connu ?
-									<select name="known" id="known">
-										<option value="connaissance">Part une connaissance.</option>
-										<option value="web" selected>En navigant sur Internet.</option>
-										<option value="réseaux sociaux">En surfant sur les réseaux sociaux.</option>
-									</select>
-								</label>
-								<!--<input class="form-control" type="email" required id="input_504" />-->
-							</div>
-							<div class="form-group">
-								<label for="message">
-									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-								</label><textarea id="message" class="form-control" rows="4" cols="50"
-									required></textarea>
-							</div>
-							<button class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine"
-								type="submit">
-								Envoyer
-							</button>
-						</form>
 					</div>
-					<div class="col-sm-6">
-						<address class="text-center">
-							<b>2 place Sathonay 69001 Lyon</b><br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-							<a href="mailto:contact@agencelapanthere.com" aria-label="Accéder à notre email"> contact@agencelapanthere.com</a>
-						</address>
-					</div>
+				</div>
+				<div class="row">
+					<fieldset>
+						<legend>Votre message</legend>
+						<div class="form-group">
+							<label for="message">
+								Brief de votre projet (Ajoutez autant de détails que nécessaire)
+							</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</div>
+					</fieldset>
+					<!--<legend>Envoyer</legend>-->
+					<button class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" type="submit">
+						Envoyer
+					</button>
+				</div>
+
+
+
+				</form>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<address class="text-center">
+						<b>2 place Sathonay 69001 Lyon</b><br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+						<a href="mailto:contact@agencelapanthere.com" aria-label="Accéder à notre email">
+							contact@agencelapanthere.com</a>
+					</address>
 				</div>
 			</div>
 		</div>
 		<!-- bloc-7 END -->
 
 		<!-- ScrollToTop Button -->
-		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')" aria-label="revenir en-tête de la page"><span
-				class="fa fa-chevron-up"></span></a>
+		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
+			aria-label="revenir en-tête de la page"><span class="fa fa-chevron-up"></span></a>
 		<!-- ScrollToTop Button END-->
 
 
@@ -170,17 +194,20 @@
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="#" aria-label="Accéder à notre page twitter"><span class="fa fa-twitter icon-md social-ic"></span></a>
+									<a class="social" href="#" aria-label="Accéder à notre page twitter"><span
+											class="fa fa-twitter icon-md social-ic"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="#" aria-label="Accéder à notre page facebook"><span class="fa fa-facebook icon-md social-ic"></span></a>
+									<a class="social" href="#" aria-label="Accéder à notre page facebook"><span
+											class="fa fa-facebook icon-md social-ic"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="#" aria-label="Accéder à notre page dribbble"><span class="fa fa-dribbble icon-md social-ic"></span></a>
+									<a class="social" href="#" aria-label="Accéder à notre page dribbble"><span
+											class="fa fa-dribbble icon-md social-ic"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
