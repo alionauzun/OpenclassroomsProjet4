@@ -375,6 +375,18 @@ ul li a:hover {
     z-index: 2;
 }
 
+fieldset {
+    padding: 13px;
+    margin-bottom: 50px;
+    border: 1px solid #FB9B71;
+    background-color: #fc9a7105;
+}
+
+legend{
+    color:#8E553B;
+    margin-bottom: 0;
+}
+
 #known {
     height: 36px;
     font-size: 14px;
@@ -385,8 +397,22 @@ ul li a:hover {
     color: rgb(98, 98, 98);
 }
 address{
-    padding-bottom: 50px;
+    padding-top: 100px;
 }
+
+footer{
+    padding-bottom: 30px!important;
+}
+
+.alert-warning {
+    color: #dd0707;
+    background-color: transparent;
+    border: none;
+}
+.alert{
+padding: 0px;
+}
+
 
 @media (min-width: 768px) {
     .site-navigation {
@@ -540,18 +566,6 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
-}
-
-fieldset {
-    padding: 13px;
-    margin-bottom: 50px;
-    border: 1px solid #FB9B71;
-    background-color: #fc9a7105;
-}
-
-legend{
-    color:#8E553B;
-    margin-bottom: 0;
 }
 
 .scrollToTop {
@@ -927,6 +941,7 @@ h6{
     border-bottom: solid 2px #1C264A;
     padding-bottom: 5px;
 }
+
 
 @media (max-width: 1024px) {
     .bloc {
