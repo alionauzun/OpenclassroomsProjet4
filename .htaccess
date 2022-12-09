@@ -51,6 +51,28 @@
 	ExpiresByType application/x-shockwave-flash "access plus 1 week"
 </IfModule>
 
+## Mise en cache, cache-control, permet de gérer le comportement du cache en fonction des fichiers et du navigateur utilisé
+<IfModule mod_headers.c>
+
+<FilesMatch "\\.(ico|webp|png|gif|swf)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+
+<FilesMatch "\\.(css)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+<FilesMatch "\\.(js)$">
+Header set Cache-Control "max-age=216000, private"
+</FilesMatch>
+
+<FilesMatch "\\.(x?html?|php)$">
+Header set Cache-Control "max-age=600, private, must-revalidate"
+</FilesMatch>
+
+</IfModule>
+
+<IfModule>
 # Les ETags distinguer les versions de chaque document
 Header unset ETag
 FileETag none
@@ -58,3 +80,4 @@ FileETag none
 # Éviter l’envoi de cookies
 Header unset Set-Cookie
 RequestHeader unset Cookie
+</IfModule>
