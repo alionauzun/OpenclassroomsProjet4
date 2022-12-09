@@ -72,7 +72,7 @@ Header set Cache-Control "max-age=600, private, must-revalidate"
 
 </IfModule>
 
-<IfModule>
+
 # Les ETags distinguer les versions de chaque document
 Header unset ETag
 FileETag none
@@ -80,4 +80,3 @@ FileETag none
 # Éviter l’envoi de cookies
 Header unset Set-Cookie
 RequestHeader unset Cookie
-</IfModule>
