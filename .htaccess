@@ -33,7 +33,7 @@
 <IfModule mod_expires.c>
 	ExpiresActive On
 	ExpiresDefault "access plus 7200 seconds"
-	ExpiresByType image/jpg 			"access plus 1 week"
+	ExpiresByType image/webp 			"access plus 1 week"
 	ExpiresByType image/jpeg 			"access plus 1 week"
 	ExpiresByType image/png 			"access plus 1 week"
 	ExpiresByType image/gif 			"access plus 1 week"
@@ -51,10 +51,10 @@
 	ExpiresByType application/x-shockwave-flash "access plus 1 week"
 </IfModule>
 
-## Mise en cache, cache-control, permet de gérer le comportement du cache en fonction des fichiers et du navigateur utilisé.
+## Mise en cache, cache-control, permet de gérer le comportement du cache en fonction des fichiers et du navigateur utilisé
 <IfModule mod_headers.c>
 
-<FilesMatch "\\.(ico|jpe?g|png|gif|swf)$">
+<FilesMatch "\\.(ico|webp|png|gif|swf)$">
 Header set Cache-Control "max-age=2592000, public"
 </FilesMatch>
 
