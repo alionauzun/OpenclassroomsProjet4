@@ -5,3 +5,4 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /js/
 sitemap: https://alionauzun.github.io/OpenclassroomsProjet4/index.html
+sitemap: https://alionauzun.github.io/OpenclassroomsProjet4/page2.html
